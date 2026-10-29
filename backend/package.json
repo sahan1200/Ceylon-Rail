@@ -1,0 +1,16 @@
+{
+  "name": "ceylon-rail-backend",
+  "version": "2.0.0",
+  "description": "Ceylon Rail — Sri Lanka Railway Reservation, Operations, Travel Planner, Complaint & Financial Management API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node tests/system.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "sql.js": "^1.10.3"
+  }
+}

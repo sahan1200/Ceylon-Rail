@@ -1,0 +1,47 @@
+-- =============================================================================
+-- CEYLON RAIL — ROLLBACK MIGRATION 001
+-- =============================================================================
+PRAGMA foreign_keys = OFF;
+DROP TABLE IF EXISTS financial_report_runs;
+DROP TABLE IF EXISTS operating_expenses;
+DROP TABLE IF EXISTS feedback_submissions;
+DROP TABLE IF EXISTS complaint_attachments;
+DROP TABLE IF EXISTS complaint_responses;
+DROP TABLE IF EXISTS complaint_assignments;
+DROP TABLE IF EXISTS complaint_status_history;
+DROP TABLE IF EXISTS complaints;
+DROP TABLE IF EXISTS itinerary_items;
+DROP TABLE IF EXISTS itinerary_days;
+DROP TABLE IF EXISTS saved_itineraries;
+DROP TABLE IF EXISTS scenic_routes;
+DROP TABLE IF EXISTS destination_station_links;
+DROP TABLE IF EXISTS tourist_attractions;
+DROP TABLE IF EXISTS tourist_destinations;
+DROP TABLE IF EXISTS refunds;
+DROP TABLE IF EXISTS cancellations;
+DROP TABLE IF EXISTS payment_transactions;
+DROP TABLE IF EXISTS payments;
+DROP TABLE IF EXISTS booking_status_history;
+DROP TABLE IF EXISTS seat_reservations;
+DROP TABLE IF EXISTS booking_passengers;
+DROP TABLE IF EXISTS bookings;
+DROP TABLE IF EXISTS fare_rules;
+DROP TABLE IF EXISTS seats;
+DROP TABLE IF EXISTS carriages;
+DROP TABLE IF EXISTS route_stops;
+DROP TABLE IF EXISTS operating_days;
+DROP TABLE IF EXISTS train_schedules;
+DROP TABLE IF EXISTS trains;
+DROP TABLE IF EXISTS notifications;
+DROP TABLE IF EXISTS audit_logs;
+DROP TABLE IF EXISTS staff_sessions;
+DROP TABLE IF EXISTS staff_users;
+DROP TABLE IF EXISTS stations;
+DROP TABLE IF EXISTS user_sessions;
+DROP TABLE IF EXISTS passenger_profiles;
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS role_permissions;
+DROP TABLE IF EXISTS permissions;
+DROP TABLE IF EXISTS roles;
+DELETE FROM schema_migrations WHERE version = '001_complete_schema';
+PRAGMA foreign_keys = ON;
